@@ -8,24 +8,27 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         xmlns:p = "clr-namespace:Memorama.Languages"
-        Title="IniciarSesionWin" Height="382" Width="504">
+        WindowStartupLocation="CenterScreen"
+        Title="{x:Static p:Resources.tIniciarSesion}" Height="382" Width="504">
     <Grid>
-        <Rectangle Fill="#FF8A8ADA" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="70" Margin="360,0,0,0"/>
-        <Rectangle Fill="#FF2D2DB2" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="71" Margin="425,0,0,0"/>
-
-        <Rectangle Fill="#FF8A8ADA" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="100" Margin="165,0,0,0"/>
-        <Rectangle Fill="#FF2D2DB2" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="95" Margin="265,0,0,0"/>
-
+        <Rectangle Fill="#FF75AA3E" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="70" Margin="360,0,0,0"/>
+        <Rectangle Fill="#FFE8DA06" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="71" Margin="425,0,0,0"/>
+        <Rectangle Fill="#FFFF387C" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="100" Margin="165,0,0,0"/>
+        <Rectangle Fill="#FF00C6FF" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="95" Margin="265,0,0,0"/>
         <Rectangle Fill="#FF8A8ADA" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="70"/>
-        <Rectangle Fill="#FF2D2DB2" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="95" Margin="70,0,0,0"/>
+        <Rectangle Fill="#FFFF0F94" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="95" Margin="70,0,0,0"/>
+
         <Image HorizontalAlignment="Left" Height="100" Margin="205,55,0,0" VerticalAlignment="Top" Width="100" Source="/Memorama;component/Resources/Background.jpg" Stretch="Fill">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/Memorama;component/Resources/Background.jpg" Stretch="UniformToFill"/>
             </Image.OpacityMask>
         </Image>
-        <TextBox x:Name="txtCorreo" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtNombre}"  HorizontalAlignment="Left" Height="28" Margin="170,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190" Foreground="White" FontFamily="Showcard Gothic"/>
-        <TextBox  HorizontalAlignment="Left" Height="28" Margin="170,227,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190" Foreground="White" FontFamily="Showcard Gothic"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="170,275,0,0" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.5,0.5">
+        <TextBox x:Name="txtCorreo" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtCorreo}"  HorizontalAlignment="Left" Height="28" Margin="170,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Foreground="White" FontFamily="Showcard Gothic"/>
+        <PasswordBox x:Name="pswContrasenia" materialDesign:HintAssist.Hint="{x:Static p:Resources.pswContrasenia}"  
+                     HorizontalAlignment="Left" Height="28" Margin="170,227,0,0"  VerticalAlignment="Top" Width="190" 
+                     Foreground="White" FontFamily="Showcard Gothic" 
+                     materialDesign:TextFieldAssist.HasClearButton="True"/>
+        <Button x:Name="btnIniciarSesion"  Content="{x:Static p:Resources.btnIniciarSesion}" HorizontalAlignment="Left" Margin="170,275,0,0" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -35,7 +38,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Label x:Name="lblRegistrarse" MouseEnter="lblRegistrarse_MouseEnter" MouseLeave="lblRegistrarse_MouseLeave"  Content="Registrarse" MouseDown="lblRegistrarse_MouseDown" HorizontalAlignment="Left" Height="25" Margin="220,310,0,0" VerticalAlignment="Top" Width="90" Foreground="#DDFFFFFF" FontFamily="Showcard Gothic" Background="{x:Null}"/>
+        <Label x:Name="lblRegistrarse" MouseEnter="lblRegistrarse_MouseEnter" MouseLeave="lblRegistrarse_MouseLeave"  Content="{x:Static p:Resources.lblRegistrarse}" MouseDown="lblRegistrarse_MouseDown" HorizontalAlignment="Left" Height="25" Margin="220,310,0,0" VerticalAlignment="Top" Width="90" Foreground="#DDFFFFFF" FontFamily="Showcard Gothic" Background="{x:Null}"/>
 
     </Grid>
 </mah:MetroWindow>

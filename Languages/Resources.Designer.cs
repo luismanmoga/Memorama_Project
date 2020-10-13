@@ -61,6 +61,24 @@ namespace Memorama.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Iniciar Sesión.
+        /// </summary>
+        public static string btnIniciarSesion {
+            get {
+                return ResourceManager.GetString("btnIniciarSesion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registrarse.
+        /// </summary>
+        public static string lblRegistrarse {
+            get {
+                return ResourceManager.GetString("lblRegistrarse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Contraseña.
         /// </summary>
         public static string pswContrasenia {
@@ -75,6 +93,24 @@ namespace Memorama.Languages {
         public static string pswContrasenia2 {
             get {
                 return ResourceManager.GetString("pswContrasenia2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Inicio de Sesión.
+        /// </summary>
+        public static string tIniciarSesion {
+            get {
+                return ResourceManager.GetString("tIniciarSesion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Registro.
+        /// </summary>
+        public static string tRegistrarse {
+            get {
+                return ResourceManager.GetString("tRegistrarse", resourceCulture);
             }
         }
         

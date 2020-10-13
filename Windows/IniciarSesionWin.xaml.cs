@@ -24,7 +24,7 @@ namespace Memorama.Windows {
 
         private void lblRegistrarse_MouseDown(object sender, MouseEventArgs e) {
             RegistroWin registroWin = new RegistroWin();
-            registroWin.Show();
+            registroWin.ShowDialog();
         }
 
         private void lblRegistrarse_MouseEnter(object sender, MouseEventArgs e) {

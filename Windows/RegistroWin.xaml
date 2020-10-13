@@ -8,22 +8,33 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         
         mc:Ignorable="d"
-         xmlns:p = "clr-namespace:Memorama.Languages"
+        xmlns:p = "clr-namespace:Memorama.Languages"
+        WindowStartupLocation="CenterScreen"
         Title="RegistroWin" Height="382" Width="504">
     <Grid HorizontalAlignment="Left" Width="494" Height="347" VerticalAlignment="Top">
-        <Grid.Background>
-            <ImageBrush ImageSource="/Memorama;component/Resources/Background.jpg"/>
-        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FF75AA3E" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="70" Margin="360,0,0,-4"/>
+        <Rectangle Fill="#FFE8DA06" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="71" Margin="425,0,-2,-4"/>
+        <Rectangle Fill="#FFFF387C" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="100" Margin="165,0,0,-4"/>
+        <Rectangle Fill="#FF00C6FF" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="95" Margin="265,0,0,-4"/>
+        <Rectangle Fill="#FF8A8ADA" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="70" Margin="0,0,0,-4"/>
+        <Rectangle Fill="#FFFF0F94" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="95" Margin="70,0,0,-4"/>
+
         <Rectangle HorizontalAlignment="Left" Height="264" Margin="35,73,0,0" RadiusY="15" RadiusX="15" StrokeStartLineCap="Round" StrokeEndLineCap="Round" Stroke="Black" StrokeThickness="3" StrokeLineJoin="Round" VerticalAlignment="Top" Width="415" Fill="#7F0C0C0C"/>
-        <TextBox x:Name="txtNombre" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtNombre}" TextWrapping="Wrap" Margin="115,84,0,0" HorizontalAlignment="Left" Width="260" Height="21" VerticalAlignment="Top" CaretBrush="White" Foreground="#FFFDFDFD" FontFamily="Showcard Gothic" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,0,2" CharacterCasing="Upper" FontStretch="ExtraExpanded"/>
-        <TextBox x:Name="txtUsuario" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtUsuario}" TextWrapping="Wrap" Margin="115,115,0,0" HorizontalAlignment="Left" Width="260" Height="25" VerticalAlignment="Top" BorderBrush="White" FontFamily="Showcard Gothic" Foreground="White" BorderThickness="0,0,0,2" Background="{x:Null}"/>
-        <TextBox x:Name="txtCorreo" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtCorreo}" TextWrapping="Wrap" Margin="115,147,0,0" HorizontalAlignment="Left" Width="260" Height="23" VerticalAlignment="Top" BorderBrush="White" FontFamily="Showcard Gothic" Foreground="WhiteSmoke" BorderThickness="0,0,0,2" Background="{x:Null}"/>
-        <TextBox x:Name="txtCorreo2" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtCorreo2}" HorizontalAlignment="Left" TextWrapping="Wrap" Width="260" Margin="115,178,0,0" Height="25" VerticalAlignment="Top" BorderBrush="White" FontFamily="Showcard Gothic" Foreground="White" BorderThickness="0,0,0,2" Background="{x:Null}"/>
-        <PasswordBox x:Name="pswContrasenia" HorizontalAlignment="Left" Width="260" Margin="115,209,0,0" Height="18" VerticalAlignment="Top" BorderBrush="White" BorderThickness="0,0,0,2" Background="#7F292929" Foreground="#FF27D3AF"/>
-        <PasswordBox x:Name="pswContrasenia2" Margin="115,240,0,0" HorizontalAlignment="Left" Width="260" Height="18" VerticalAlignment="Top" BorderThickness="0,0,0,2" BorderBrush="White" Background="#7F292929"/>
+        <TextBox x:Name="txtNombre" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtNombre}" TextWrapping="Wrap" Margin="115,94,0,0" HorizontalAlignment="Left" Width="260" Height="25" VerticalAlignment="Top" CaretBrush="White" Foreground="#FFFDFDFD" FontFamily="Showcard Gothic" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,0,2" CharacterCasing="Upper" FontStretch="ExtraExpanded"/>
+        <TextBox x:Name="txtUsuario" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtUsuario}" TextWrapping="Wrap" Margin="115,124,0,0" HorizontalAlignment="Left" Width="260" Height="25" VerticalAlignment="Top" BorderBrush="White" FontFamily="Showcard Gothic" Foreground="White" BorderThickness="0,0,0,2" Background="{x:Null}"/>
+        <TextBox x:Name="txtCorreo" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtCorreo}" TextWrapping="Wrap" Margin="115,154,0,0" HorizontalAlignment="Left" Width="260" Height="25" VerticalAlignment="Top" BorderBrush="White" FontFamily="Showcard Gothic" Foreground="WhiteSmoke" BorderThickness="0,0,0,2" Background="{x:Null}"/>
+        <TextBox x:Name="txtCorreo2" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtCorreo2}" HorizontalAlignment="Left" TextWrapping="Wrap" Width="260" Margin="115,184,0,0" Height="25" VerticalAlignment="Top" BorderBrush="White" FontFamily="Showcard Gothic" Foreground="White" BorderThickness="0,0,0,2" Background="{x:Null}"/>
+        <PasswordBox x:Name="pswContrasenia" materialDesign:HintAssist.Hint="{x:Static p:Resources.pswContrasenia}"
+                     HorizontalAlignment="Left" Width="260" Margin="115,214,0,0" Height="26" VerticalAlignment="Top" 
+                     BorderBrush="White" BorderThickness="0,0,0,2" Background="#7F292929" Foreground="White" FontFamily="Showcard Gothic"
+                     MaxLength="8" />
+        <PasswordBox x:Name="pswContrasenia2" Margin="115,245,0,0" HorizontalAlignment="Left" Width="260" Height="25" 
+                     VerticalAlignment="Top" BorderThickness="0,0,0,2" BorderBrush="White" Background="#7F292929" 
+                     FontFamily="Showcard Gothic" Foreground="White" materialDesign:HintAssist.Hint="{x:Static p:Resources.pswContrasenia2}"
+                     MaxLength="8" />
 
         <Rectangle HorizontalAlignment="Right" Height="50" Margin="0,15,10,0" Stroke="Black" VerticalAlignment="Top" Width="474" StrokeStartLineCap="Round" StrokeLineJoin="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeThickness="3" RadiusX="15" RadiusY="15"/>
         <TextBlock x:Name="txbTitulo" Text="{x:Static p:Resources.txbTitulo}" HorizontalAlignment="Left" Height="30" Margin="115,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285" FontFamily="Showcard Gothic" FontSize="25" Foreground="Black" FontWeight="Bold"/>
