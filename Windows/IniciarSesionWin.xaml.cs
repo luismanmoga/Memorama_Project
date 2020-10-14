@@ -34,5 +34,26 @@ namespace Memorama.Windows {
         private void lblRegistrarse_MouseLeave(object sender, MouseEventArgs e) {
             lblRegistrarse.Foreground = Brushes.White;
         }
+
+        private void txtCorreo_LostFocus(object sender, RoutedEventArgs e) {
+            
+        }
+
+        /*
+         * 
+         * BOTÓN SALIR
+         * 
+         */
+        private void btnSalir_MouseEnter(object sender, MouseEventArgs e) {
+            lblSalir.Visibility = Visibility.Visible;
+        }
+
+        private void btnSalir_MouseLeave(object sender, MouseEventArgs e) {
+            lblSalir.Visibility = Visibility.Hidden;
+        }
+
+        private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e) {
+            this.Close();
+        }
     }
 }

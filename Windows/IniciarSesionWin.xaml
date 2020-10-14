@@ -9,6 +9,7 @@
         mc:Ignorable="d"
         xmlns:p = "clr-namespace:Memorama.Languages"
         WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
         Title="{x:Static p:Resources.tIniciarSesion}" Height="382" Width="504">
     <Grid>
         <Rectangle Fill="#FF75AA3E" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="70" Margin="360,0,0,0"/>
@@ -18,15 +19,17 @@
         <Rectangle Fill="#FF8A8ADA" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="70"/>
         <Rectangle Fill="#FFFF0F94" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="95" Margin="70,0,0,0"/>
 
-        <Image HorizontalAlignment="Left" Height="100" Margin="205,55,0,0" VerticalAlignment="Top" Width="100" Source="/Memorama;component/Resources/Background.jpg" Stretch="Fill">
+        <Image HorizontalAlignment="Left" Height="115" Margin="190,40,0,0" VerticalAlignment="Top" Width="140" Source="/Memorama;component/Resources/Memorama.png" Stretch="Fill">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/Memorama;component/Resources/Background.jpg" Stretch="UniformToFill"/>
             </Image.OpacityMask>
         </Image>
-        <TextBox x:Name="txtCorreo" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtCorreo}"  HorizontalAlignment="Left" Height="28" Margin="170,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Foreground="White" FontFamily="Showcard Gothic"/>
+        <TextBox x:Name="txtCorreo" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtCorreo}"  HorizontalAlignment="Left" 
+                 Height="28" Margin="170,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Foreground="White" 
+                 FontFamily="Showcard Gothic" MaxLength="25" LostFocus="txtCorreo_LostFocus"  />
         <PasswordBox x:Name="pswContrasenia" materialDesign:HintAssist.Hint="{x:Static p:Resources.pswContrasenia}"  
                      HorizontalAlignment="Left" Height="28" Margin="170,227,0,0"  VerticalAlignment="Top" Width="190" 
-                     Foreground="White" FontFamily="Showcard Gothic" 
+                     Foreground="White" FontFamily="Showcard Gothic" MaxLength="8"
                      materialDesign:TextFieldAssist.HasClearButton="True"/>
         <Button x:Name="btnIniciarSesion"  Content="{x:Static p:Resources.btnIniciarSesion}" HorizontalAlignment="Left" Margin="170,275,0,0" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
@@ -38,7 +41,11 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Label x:Name="lblRegistrarse" MouseEnter="lblRegistrarse_MouseEnter" MouseLeave="lblRegistrarse_MouseLeave"  Content="{x:Static p:Resources.lblRegistrarse}" MouseDown="lblRegistrarse_MouseDown" HorizontalAlignment="Left" Height="25" Margin="220,310,0,0" VerticalAlignment="Top" Width="90" Foreground="#DDFFFFFF" FontFamily="Showcard Gothic" Background="{x:Null}"/>
-
+        <Label x:Name="lblRegistrarse" MouseEnter="lblRegistrarse_MouseEnter" MouseLeave="lblRegistrarse_MouseLeave"  Content="{x:Static p:Resources.lblRegistrarse}" MouseDown="lblRegistrarse_MouseDown" HorizontalAlignment="Left" Height="25" Margin="220,310,0,0" VerticalAlignment="Top" Width="90" Foreground="#DDFFFFFF" FontFamily="Showcard Gothic" Background="{x:Null}" HorizontalContentAlignment="Center" Cursor="Hand"/>
+        <StackPanel Margin="5,0,0,5" Height="52" MouseEnter="btnSalir_MouseEnter" MouseLeave="btnSalir_MouseLeave" MouseDown="StackPanel_MouseDown"
+                    VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="43">
+            <materialDesign:PackIcon Name="btnSalir" Kind="ExitToApp" Height="52" Width="43" VerticalAlignment="Center"  Foreground="Black" Cursor="Hand" />
+        </StackPanel>
+        <Label Name="lblSalir" Content="{x:Static p:Resources.lblSalir}" Visibility="Hidden" HorizontalAlignment="Left" Margin="53,311,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontWeight="Bold" Foreground="#F2000000"/>
     </Grid>
 </mah:MetroWindow>

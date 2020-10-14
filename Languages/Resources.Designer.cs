@@ -61,6 +61,15 @@ namespace Memorama.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Registrarte.
+        /// </summary>
+        public static string btnEndRegister {
+            get {
+                return ResourceManager.GetString("btnEndRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Iniciar Sesión.
         /// </summary>
         public static string btnIniciarSesion {
@@ -75,6 +84,24 @@ namespace Memorama.Languages {
         public static string lblRegistrarse {
             get {
                 return ResourceManager.GetString("lblRegistrarse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Atrás.
+        /// </summary>
+        public static string lblRegresar {
+            get {
+                return ResourceManager.GetString("lblRegresar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Salir.
+        /// </summary>
+        public static string lblSalir {
+            get {
+                return ResourceManager.GetString("lblSalir", resourceCulture);
             }
         }
         
@@ -138,15 +165,6 @@ namespace Memorama.Languages {
         public static string txtCorreo2 {
             get {
                 return ResourceManager.GetString("txtCorreo2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Nombre.
-        /// </summary>
-        public static string txtNombre {
-            get {
-                return ResourceManager.GetString("txtNombre", resourceCulture);
             }
         }
         

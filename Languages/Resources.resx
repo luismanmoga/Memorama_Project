@@ -117,11 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnEndRegister" xml:space="preserve">
+    <value>Registrarte</value>
+  </data>
   <data name="btnIniciarSesion" xml:space="preserve">
     <value>Iniciar Sesión</value>
   </data>
   <data name="lblRegistrarse" xml:space="preserve">
     <value>Registrarse</value>
+  </data>
+  <data name="lblRegresar" xml:space="preserve">
+    <value>Atrás</value>
+  </data>
+  <data name="lblSalir" xml:space="preserve">
+    <value>Salir</value>
   </data>
   <data name="pswContrasenia" xml:space="preserve">
     <value>Contraseña</value>
@@ -143,9 +152,6 @@
   </data>
   <data name="txtCorreo2" xml:space="preserve">
     <value>Repetir correo</value>
-  </data>
-  <data name="txtNombre" xml:space="preserve">
-    <value>Nombre</value>
   </data>
   <data name="txtUsuario" xml:space="preserve">
     <value>Usuario</value>
