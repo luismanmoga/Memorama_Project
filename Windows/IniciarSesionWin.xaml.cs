@@ -1,4 +1,6 @@
 ﻿using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,21 +24,13 @@ namespace Memorama.Windows {
             InitializeComponent();
         }
 
-        private void lblRegistrarse_MouseDown(object sender, MouseEventArgs e) {
+        private void txtCorreo_LostFocus(object sender, RoutedEventArgs e) {
+
+        }
+
+        private void btnRegistrarse_Click(object sender, RoutedEventArgs e) {
             RegistroWin registroWin = new RegistroWin();
             registroWin.ShowDialog();
-        }
-
-        private void lblRegistrarse_MouseEnter(object sender, MouseEventArgs e) {
-            lblRegistrarse.Foreground = Brushes.Blue;
-        }
-
-        private void lblRegistrarse_MouseLeave(object sender, MouseEventArgs e) {
-            lblRegistrarse.Foreground = Brushes.White;
-        }
-
-        private void txtCorreo_LostFocus(object sender, RoutedEventArgs e) {
-            
         }
 
         /*
@@ -53,7 +47,11 @@ namespace Memorama.Windows {
         }
 
         private void StackPanel_MouseDown(object sender, MouseButtonEventArgs e) {
-            this.Close();
+            Close();
+        }
+
+        private void btnRegistrarse_Click_1(object sender, RoutedEventArgs e) {
+
         }
     }
 }
