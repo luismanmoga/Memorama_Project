@@ -61,6 +61,7 @@ namespace Memorama.Languages {
         }
         
         /// <summary>
+<<<<<<< Updated upstream
         ///   Busca una cadena traducida similar a Registrarte.
         /// </summary>
         public static string btnEndRegister {
@@ -70,6 +71,8 @@ namespace Memorama.Languages {
         }
         
         /// <summary>
+=======
+>>>>>>> Stashed changes
         ///   Busca una cadena traducida similar a Iniciar Sesión.
         /// </summary>
         public static string btnIniciarSesion {
@@ -88,6 +91,7 @@ namespace Memorama.Languages {
         }
         
         /// <summary>
+<<<<<<< Updated upstream
         ///   Busca una cadena traducida similar a Atrás.
         /// </summary>
         public static string lblRegresar {
@@ -106,6 +110,8 @@ namespace Memorama.Languages {
         }
         
         /// <summary>
+=======
+>>>>>>> Stashed changes
         ///   Busca una cadena traducida similar a Contraseña.
         /// </summary>
         public static string pswContrasenia {

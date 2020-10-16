@@ -8,27 +8,24 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         xmlns:p = "clr-namespace:Memorama.Languages"
-        WindowStartupLocation="CenterScreen"
-        ResizeMode="NoResize"
-        Title="{x:Static p:Resources.tIniciarSesion}" Height="382" Width="504">
+        Title="IniciarSesionWin" Height="382" Width="504">
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Memorama;component/Resources/Background.jpg"/>
-        </Grid.Background>
+        <Rectangle Fill="#FF8A8ADA" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="70" Margin="360,0,0,0"/>
+        <Rectangle Fill="#FF2D2DB2" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="71" Margin="425,0,0,0"/>
 
-        <Image HorizontalAlignment="Left" Height="115" Margin="185,35,0,0" VerticalAlignment="Top" Width="140" Source="/Memorama;component/Resources/Memorama.png" Stretch="Fill">
+        <Rectangle Fill="#FF8A8ADA" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="100" Margin="165,0,0,0"/>
+        <Rectangle Fill="#FF2D2DB2" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="95" Margin="265,0,0,0"/>
+
+        <Rectangle Fill="#FF8A8ADA" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="70"/>
+        <Rectangle Fill="#FF2D2DB2" HorizontalAlignment="Left" Height="351" VerticalAlignment="Top" Width="95" Margin="70,0,0,0"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="205,55,0,0" VerticalAlignment="Top" Width="100" Source="/Memorama;component/Resources/Background.jpg" Stretch="Fill">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/Memorama;component/Resources/Background.jpg" Stretch="UniformToFill"/>
             </Image.OpacityMask>
         </Image>
-        <TextBox x:Name="txtCorreo" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtCorreo}"  HorizontalAlignment="Center" 
-                 Height="28" Margin="110,155,108,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" Foreground="White" 
-                 FontFamily="Showcard Gothic" MaxLength="25" LostFocus="txtCorreo_LostFocus" BorderBrush="White" Background="#00000000" BorderThickness="0,0,0,2" TextDecorations="{x:Null}" FontSize="13"  />
-        <PasswordBox x:Name="pswContrasenia" materialDesign:HintAssist.Hint="{x:Static p:Resources.pswContrasenia}"  
-                     HorizontalAlignment="Left" Height="28" Margin="110,188,0,0"  VerticalAlignment="Top" Width="280" 
-                     Foreground="White" FontFamily="Showcard Gothic" MaxLength="8"
-                     materialDesign:TextFieldAssist.HasClearButton="True" BorderBrush="White" SelectionOpacity="0.3" BorderThickness="0,0,0,2" FontSize="13"/>
-        <Button x:Name="btnIniciarSesion"  Content="{x:Static p:Resources.btnIniciarSesion}" HorizontalAlignment="Left" Margin="110,228,0,0" VerticalAlignment="Top" Width="280" RenderTransformOrigin="0.5,0.5" FontFamily="Showcard Gothic" FontSize="12">
+        <TextBox x:Name="txtCorreo" materialDesign:HintAssist.Hint="{x:Static p:Resources.txtNombre}"  HorizontalAlignment="Left" Height="28" Margin="170,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190" Foreground="White" FontFamily="Showcard Gothic"/>
+        <TextBox  HorizontalAlignment="Left" Height="28" Margin="170,227,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="190" Foreground="White" FontFamily="Showcard Gothic"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="170,275,0,0" VerticalAlignment="Top" Width="190" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -38,12 +35,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <StackPanel Margin="5,0,0,5" Height="53" MouseEnter="btnSalir_MouseEnter" MouseLeave="btnSalir_MouseLeave" MouseDown="StackPanel_MouseDown"
-                    VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="43">
-            <materialDesign:PackIcon Name="btnSalir" Kind="ExitToApp" Height="52" Width="43" VerticalAlignment="Center"  Foreground="White" Cursor="Hand" Background="#3F000000" />
-        </StackPanel>
-        <Label Name="lblSalir" Content="{x:Static p:Resources.lblSalir}" Visibility="Hidden" HorizontalAlignment="Left" Margin="53,311,0,0" VerticalAlignment="Top" FontFamily="Showcard Gothic" FontWeight="Bold" Foreground="#F2000000"/>
-        <Button Name="btnRegistrarse" Click="btnRegistrarse_Click" Content="Registrarse" HorizontalAlignment="Left" Margin="110,269,0,0" VerticalAlignment="Top" Width="105" BorderBrush="#FF63A5B6" FontFamily="Showcard Gothic" FontSize="11" Background="#FF63A5B6"/>
-        <Button Name="btnRecuperarPass" Content="Olvide mi contraseña" HorizontalAlignment="Left" Margin="220,269,0,0" VerticalAlignment="Top" Width="170" Background="#FF63A5B6" BorderBrush="{x:Null}" FontFamily="Showcard Gothic" FontSize="11"/>
+        <Label x:Name="lblRegistrarse" MouseEnter="lblRegistrarse_MouseEnter" MouseLeave="lblRegistrarse_MouseLeave"  Content="Registrarse" MouseDown="lblRegistrarse_MouseDown" HorizontalAlignment="Left" Height="25" Margin="220,310,0,0" VerticalAlignment="Top" Width="90" Foreground="#DDFFFFFF" FontFamily="Showcard Gothic" Background="{x:Null}"/>
+
     </Grid>
 </mah:MetroWindow>
